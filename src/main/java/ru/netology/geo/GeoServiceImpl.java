@@ -21,6 +21,7 @@ public class GeoServiceImpl implements GeoService {
             return new Location("New York", Country.USA, " 10th Avenue", 32);
         } else if (ip.startsWith("172.")) {
             return new Location("Moscow", Country.RUSSIA, null, 0);
+
         } else if (ip.startsWith("96.")) {
             return new Location("New York", Country.USA, null,  0);
         }
